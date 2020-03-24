@@ -2,7 +2,8 @@
 url: "montagembr.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Montagem de Móveis Express" # the name of your site, e.g. ACME Corp.
-
+description: "Montagem de Móveis, montagem de móveis rj, montagem de móveis rio de janeiro,
+montador de móveis, montador de móveis rj, montador de móveis rio de janeiro"
 # Build settings
 markdown: kramdown
 
