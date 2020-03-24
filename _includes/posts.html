@@ -1,0 +1,48 @@
+<section class="background-color-grey">
+  <div class="inner-content-top-out-bottom-out">
+    <div class="container">
+      <h2 class="text-center">Trabalhos Recentes</h2>
+      <div class="row">
+        <div class="col-md-6">
+          {% for post in site.posts limit:8 %}
+
+          <div class="thumbnail">
+            <div class="limit">
+              <a href="{{ post.url }}">
+                <img class="" src="{{ post.post-images[0] }}" />
+              </a>
+            </div>
+            <hr />
+
+            <div class="caption">
+              <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+              <span class="post-date"
+                >{{ post.date | date: "%b %-d, %Y" }}</span
+              >
+              <p>{{ post.body }}</p>
+            </div>
+          </div>
+
+          <!-- pagination -->
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style type="text/css">
+  .limit {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .limit img {
+    width: 100%;
+    height: 100%;
+  }
+  .thumbnail {
+    padding: 0px !important;
+  }
+</style>
