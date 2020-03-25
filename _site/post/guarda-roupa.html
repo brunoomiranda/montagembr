@@ -17,8 +17,11 @@
 <!-- End Jekyll SEO tag -->
 
   <head>
+  <meta property="og:image" content="http://localhost:4000/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
+
   <title>
     Guarda-roupa
   </title>
@@ -242,6 +245,23 @@
             <li><h1>Guarda-roupa</h1></li>
             <li><p>Guarda-roupa</p></li>
             <li><span>Mar 13, 2020</span></li>
+            <li>
+              <div
+                class="fb-share-button"
+                data-href="http://localhost:4000//post/guarda-roupa"
+                data-layout="button"
+                data-size="large"
+              >
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/guarda-roupa&title=Guarda-roupa"
+                 
+                "
+                  class="fb-xfbml-parse-ignore"
+                  >Compartilhar</a
+                >
+              </div>
+              </li>
           </ul>
         </div>
       </div>
@@ -401,14 +421,11 @@
     //initialize swiper when document ready
     let mySwiper = new Swiper(".swiper-container", {
       // Optional parameters
+      speed: 250,
       loop: true,
       direction: "horizontal",
       centeredSlides: true,
       slidesPerView: 1,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false
-      },
 
       initialSlide: 1,
       nextButton: $(".swiper-button-next").get(0),

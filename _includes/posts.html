@@ -20,6 +20,23 @@
                 >{{ post.date | date: "%b %-d, %Y" }}</span
               >
               <p>{{ post.body }}</p>
+
+<div
+class="fb-share-button"
+data-href="{{ site.baseurl }}/"
+data-layout="button"
+data-size="large"
+>
+<a
+  target="_blank"
+  href="https://www.facebook.com/sharer.php?u={{ site.baseurl }}/{{ page.url }}&title={{ page.title }}"
+ 
+"
+  class="fb-xfbml-parse-ignore"
+  >Compartilhar</a
+>
+</div>
+
             </div>
           </div>
 
