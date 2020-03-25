@@ -1,4 +1,13 @@
 <!-- Bootstrap core JavaScript -->
+
+<div id="fb-root"></div>
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"
+></script>
+
 <script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
 <script src="{{ site.baseurl }}/assets/js/app.js"></script>
 
@@ -10,12 +19,20 @@
       loop: true,
       direction: "horizontal",
       slidesPerView: 1,
-      speed: 250,
+      // speed: 250,
+      speed: 55000,
       initialSlide: 1,
       nextButton: $(".swiper-button-next").get(0),
       prevButton: $(".swiper-button-prev").get(0),
       pagination: $(".swiper-pagination").get(0),
-      paginationClickable: true
+      paginationClickable: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      lazy: {
+        loadPrevNext: true
+      }
     });
   });
 </script>

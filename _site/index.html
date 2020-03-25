@@ -53,12 +53,7 @@
       >
         <h4>Trabalhos</h4>
       </a>
-      <a
-        href="/about"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Sobre</h4>
-      </a>
+      
       <a
         href="/contact"
         class="link-color-white nav-menu-item-wrapper"
@@ -169,12 +164,6 @@
   <li  data-target="#nav-virtual"
   >
     <a  class="nav-link" href="/" data-current="current page">Home</a>
-    
-  </li>
-
-  <li  data-target="#nav-virtual"
-  >
-    <a  class="nav-link" href="/about">Sobre</a>
     
   </li>
 
@@ -441,11 +430,15 @@
     
            
               </div>
+              
           </div>
  
         </div>
+        
         </div>
+        
       </div>
+      
     </div>
   </div>
 </section>
@@ -498,7 +491,6 @@
           <p>Pelos telefones</p>
           <ul class="list-unstyled ">
             <li>(21) 98865-8826</li>
-            <li>(21) 99245-8798</li>
           </ul>
         </div>
 
@@ -579,7 +571,7 @@
             <hr />
 
             <div class="caption">
-              <a href="/post/rack"><h4>Rack</h4></a>
+              <a href="/post/rack"><h2>Rack</h2></a>
               <span class="post-date"
                 >Mar 15, 2020</span
               >
@@ -600,7 +592,7 @@
             <hr />
 
             <div class="caption">
-              <a href="/post/mesa-de-jantar-2"><h4>Mesa de jantar 2</h4></a>
+              <a href="/post/mesa-de-jantar-2"><h2>Mesa de jantar 2</h2></a>
               <span class="post-date"
                 >Mar 14, 2020</span
               >
@@ -621,7 +613,7 @@
             <hr />
 
             <div class="caption">
-              <a href="/post/arm%C3%A1rio-de-cozinha"><h4>Armario de cozinha </h4></a>
+              <a href="/post/arm%C3%A1rio-de-cozinha"><h2>Armario de cozinha </h2></a>
               <span class="post-date"
                 >Mar 14, 2020</span
               >
@@ -642,7 +634,7 @@
             <hr />
 
             <div class="caption">
-              <a href="/post/guarda-roupa"><h4>Guarda-roupa</h4></a>
+              <a href="/post/guarda-roupa"><h2>Guarda-roupa</h2></a>
               <span class="post-date"
                 >Mar 13, 2020</span
               >
@@ -673,6 +665,22 @@
     padding: 0px !important;
   }
 </style>
+ 
+<div
+  class="fb-share-button"
+  data-href="https://www.montagembr.com/"
+  data-layout="button"
+  data-size="large"
+>
+  <a
+    target="_blank"
+    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+   
+  "
+    class="fb-xfbml-parse-ignore"
+    >Compartilhar</a
+  >
+</div>
 
 
       </main>
@@ -703,13 +711,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-3">
-          <h4>Bruno Montador</h4>
+          <h4>MontagemBR</h4>
 
           <ul class="list-unstyled accordion-content">
-            <li>
-              <a href="/about">Empresa</a>
-            </li>
-
             <li>
               <a href="/contact">Contato</a>
             </li>
@@ -750,13 +754,9 @@
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
             <span class="footer-accordion-header">
-              <h4>MontagemBr</h4>
+              <h4>MontagemBR</h4>
             </span>
             <ul class="list-unstyled accordion-content">
-              <li>
-                <a href="/about">Empresa</a>
-              </li>
-
               <li>
                 <a href="/contact">Contato</a>
               </li>
@@ -813,6 +813,15 @@
 </div>
 
       <!-- Bootstrap core JavaScript -->
+
+<div id="fb-root"></div>
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"
+></script>
+
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/app.js"></script>
 
@@ -824,12 +833,20 @@
       loop: true,
       direction: "horizontal",
       slidesPerView: 1,
-      speed: 250,
+      // speed: 250,
+      speed: 55000,
       initialSlide: 1,
       nextButton: $(".swiper-button-next").get(0),
       prevButton: $(".swiper-button-prev").get(0),
       pagination: $(".swiper-pagination").get(0),
-      paginationClickable: true
+      paginationClickable: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      lazy: {
+        loadPrevNext: true
+      }
     });
   });
 </script>

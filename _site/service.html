@@ -53,12 +53,7 @@
       >
         <h4>Trabalhos</h4>
       </a>
-      <a
-        href="/about"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Sobre</h4>
-      </a>
+      
       <a
         href="/contact"
         class="link-color-white nav-menu-item-wrapper"
@@ -174,12 +169,6 @@
 
   <li  data-target="#nav-virtual"
   >
-    <a  class="nav-link" href="/about">Sobre</a>
-    
-  </li>
-
-  <li  data-target="#nav-virtual"
-  >
     <a  class="nav-link" href="/contact">Contato</a>
     
   </li>
@@ -268,13 +257,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-3">
-          <h4>Bruno Montador</h4>
+          <h4>MontagemBR</h4>
 
           <ul class="list-unstyled accordion-content">
-            <li>
-              <a href="/about">Empresa</a>
-            </li>
-
             <li>
               <a href="/contact">Contato</a>
             </li>
@@ -315,13 +300,9 @@
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
             <span class="footer-accordion-header">
-              <h4>MontagemBr</h4>
+              <h4>MontagemBR</h4>
             </span>
             <ul class="list-unstyled accordion-content">
-              <li>
-                <a href="/about">Empresa</a>
-              </li>
-
               <li>
                 <a href="/contact">Contato</a>
               </li>
@@ -378,6 +359,15 @@
 </div>
 
       <!-- Bootstrap core JavaScript -->
+
+<div id="fb-root"></div>
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"
+></script>
+
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/app.js"></script>
 
@@ -389,12 +379,20 @@
       loop: true,
       direction: "horizontal",
       slidesPerView: 1,
-      speed: 250,
+      // speed: 250,
+      speed: 55000,
       initialSlide: 1,
       nextButton: $(".swiper-button-next").get(0),
       prevButton: $(".swiper-button-prev").get(0),
       pagination: $(".swiper-pagination").get(0),
-      paginationClickable: true
+      paginationClickable: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      lazy: {
+        loadPrevNext: true
+      }
     });
   });
 </script>
