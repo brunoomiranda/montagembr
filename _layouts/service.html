@@ -45,6 +45,21 @@ layout: default
                 >{{ post.date | date: "%b %-d, %Y" }}</span
               >
               <p>{{ post.body }}</p>
+              <div
+              class="fb-share-button"
+              data-href="{{ site.url }}/{{ post.url }}"
+              data-layout="button"
+              data-size="large"
+            >
+              <a
+                target="_blank"
+                href="https://www.facebook.com/sharer.php?u={{ site.url }}/{{ post.url }}&title={{ post.title }}"
+               
+              "
+                class="fb-xfbml-parse-ignore"
+                >Compartilhar</a
+              >
+            </div>
             </div>
           </div>
 
