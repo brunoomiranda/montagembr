@@ -5,9 +5,9 @@ title: "Montagem de Móveis Express" # the name of your site, e.g. ACME Corp.
 description: "Montagem de Móveis, montagem de móveis rj, montagem de móveis rio de janeiro,
 montador de móveis, montador de móveis rj, montador de móveis rio de janeiro"
 #image: /assets/img/logo.png
-tagline:"Montagem de Móveis, montagem de móveis rj, montagem de móveis rio de janeiro,
+tagline: "Montagem de Móveis, montagem de móveis rj, montagem de móveis rio de janeiro,
 montador de móveis, montador de móveis rj, montador de móveis rio de janeiro"
-lang:"pt-BR"
+lang: "pt-BR"
 # Build settings
 markdown: kramdown
 
