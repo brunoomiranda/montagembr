@@ -15,5 +15,6 @@ fields:
   name: body
   label: body
 pages:
+- _posts/armário-de-cozinha-abril-1.md
 - _posts/guarda-roupa-abril-1.md
 - _posts/guarda-roupa-abril-2.md
