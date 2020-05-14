@@ -36,6 +36,11 @@ data-size="large"
   >Compartilhar</a
 >
 </div>
+<a class="botao-wpp" href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'>  <img
+  class="location-icon fa fa-users "
+  src="{{ site.baseurl }}/assets/icon/whatsapp.svg"
+  alt="{{ info.phone }}"
+/>Compartilhar</a>
 
             </div>
           </div>

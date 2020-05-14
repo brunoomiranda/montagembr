@@ -1,0 +1,20 @@
+---
+label: Post
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: image_gallery
+  name: post-images
+  label: post-images
+- type: text
+  name: body
+  label: body
+pages:
+- _posts/2020-04-05-armário-de-cozinha-abril-1.md
+- _posts/2020-04-06-guarda-roupa-abril-2.md
+- _posts/2020-04-07-guarda-roupa-abril-1.md
