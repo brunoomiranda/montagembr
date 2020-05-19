@@ -8,44 +8,6 @@
   src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"
 ></script>
 
-<script src="{{ site.baseurl }}/assets/js/vendor.js"></script>
-<script src="{{ site.baseurl }}/assets/js/app.js"></script>
-
-<script>
-  $(document).ready(function() {
-    //initialize swiper when document ready
-    let mySwiper = new Swiper(".swiper-container", {
-      // Optional parameters
-      speed: 250,
-      loop: true,
-      direction: "horizontal",
-      centeredSlides: true,
-      slidesPerView: 1,
-
-      initialSlide: 0,
-      nextButton: $(".swiper-button-next").get(0),
-      prevButton: $(".swiper-button-prev").get(0),
-      pagination: $(".swiper-pagination").get(0),
-      paginationClickable: true,
-
-      lazy: {
-        loadPrevNext: true
-      }
-    });
-  });
-</script>
-
-<script type="text/javascript">
-  $("#contact-form").submit(function(e) {
-    e.preventDefault();
-
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Mensagem enviada");
-    });
-  });
-</script>
-
 <!-- 
    MADE BY NETJAPA
   -->

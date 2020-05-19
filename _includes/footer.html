@@ -1,126 +1,40 @@
-<!-- start footer section -->
-
-<footer id="footer">
+<footer class="site-footer">
   {% if site.data.information %} {% assign info = site.data.information %}
-  <div class="footer-pre-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="footer-pre-section-element">
-            <i class="fa fa-phone"></i>
-            <a href="tel:(21) 98865-8826"> {{info.phone}}</a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="footer-pre-section-element">
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:bruno2014miranda21@gmail.com.com">{{info.email}}</a>
-          </div>
-        </div>
-      </div>
+  <div class="container pure-g">
+    <div class="footer-col pure-u-1 pure-u-md-1-4">
+      <i class="fa fa-phone"></i>
+      <a href="tel:(21) 98865-8826"> {{info.phone}}</a>
+
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:bruno2014miranda21@gmail.com.com">{{info.email}}</a>
+
+      <p class="text-center">
+        <small>© 2020. MontagemBR</small>
+      </p>
     </div>
-  </div>
-  {% endif %}
-  <div class="footer-main-section hidden-sm hidden-xs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-3">
-          <h4>MontagemBR</h4>
 
-          <ul class="list-unstyled accordion-content">
-            <li>
-              <a href="{{ site.baseurl }}/contact">Contato</a>
-            </li>
+    {% endif %}
 
-            <li>
-              <a href="{{ site.baseurl }}/contact">Clientes</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-2 col-sm-3">
-          {% if site.data.information %} {% assign info = site.data.information
-          %}
-          <ul class="list-unstyled">
-            <li class="social-icons">
-              <a href="https://www.facebook.com/montagembr" target="_blank">
-                <i class="fa fa-facebook-square fa-2x fa-fh"></i>
-              </a>
-
-              <a href="https://www.instagram.com/montagembr" target="_blank">
-                <i class="fa fa-instagram fa-2x"></i>
-              </a>
-              <a href="https://www.youtube.com/montagembr" target="_blank">
-                <i class="fa fa-youtube-play fa-2x"></i>
-              </a>
-            </li>
-          </ul>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-main-section hidden-md hidden-lg">
-    <div class="container">
-      <div class="footer-accordion">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <span class="footer-accordion-header">
-              <h4>MontagemBR</h4>
-            </span>
-            <ul class="list-unstyled accordion-content">
-              <li>
-                <a href="/contact">Contato</a>
-              </li>
-
-              <li>
-                <a href="/customers">Clientes</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-            <span class="footer-accordion-header">
-              <h4>Sobre Nós</h4>
-            </span>
-            {% if site.data.information %} {% assign info =
-            site.data.information %}
-            <ul class="list-unstyled">
-              <li class="social-icons">
-                <a href="https://www.facebook.com/montagembr" target="_blank">
-                  <i class="fa fa-facebook-square fa-2x fa-fh"></i>
-                </a>
-                <a href="https://twitter.com/montagembr" target="_blank">
-                  <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-                </a>
-                <a href="https://www.instagram.com/montagembr" target="_blank">
-                  <i class="fa fa-instagram fa-2x"></i>
-                </a>
-                <a href="https://www.youtube.com/montagembr" target="_blank">
-                  <i class="fa fa-youtube-play fa-2x"></i>
-                </a>
-              </li>
-            </ul>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-post-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="text-center">
-            <small>© 2020. MontagemBR</small>
-          </p>
-        </div>
-      </div>
+    <div class="footer-col pure-u-1 pure-u-md-1-4">
+      {% if site.data.information %} {% assign info = site.data.information %}
+      <ul class="list-unstyled">
+        <li class="social-icons">
+          <a href="https://www.facebook.com/montagembr" target="_blank">
+            <i class="fa fa-facebook-square fa-2x fa-fh"></i>
+          </a>
+          <a href="https://twitter.com/montagembr" target="_blank">
+            <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
+          </a>
+          <a href="https://www.instagram.com/montagembr" target="_blank">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.youtube.com/montagembr" target="_blank">
+            <i class="fa fa-youtube-play fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      {% endif %}
     </div>
   </div>
 </footer>
 <!-- end footer section -->
-
-<div class="back-top animate animated hidden">
-  <i class="fa fa-arrow-up"></i>
-</div>

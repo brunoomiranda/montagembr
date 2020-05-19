@@ -1,98 +1,58 @@
+{% if page.url == "/" %}
+<section class="grey-card">
 
 
+  <div class="container pure-g ">
+    <div class="pure-u-1 pure-u-md-1-2"><img src="/photos/services.png" /></div>
 
-
-
-<section class="background-color-grey ">
-  <div class="inner-content-top-in-bottom-out">
-    <div class="container ">
-      <h1 class="text-center">  Serviços
-      </h1>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-          
-
-
-
-          <div class="panel panel-default">
-            <div class="info-box-icon-container ">
-              <div class="panel-body">
-              
-             
-          
-              <p class="margin-0">
-               <!-- {{ services.service_heading }}-->
-               Montamos e desmontamos todos os tipos de móveis. Agilidade e profissionalismo, Montamos móveis em mdf, mdp, aço, madeira, entre outros.
-                
-              </br>
-                </p>
-              
-              
-              <!--{{ services.service_text }}-->
-             
-              
-                <div class="box-gray">
-                  <div class="row">
-               
-                    {% for service in page.services limit:8 %}
-                    <div
-                      class=" col-lg-4 col-md-4 col-sm-4 col-xs-6"
-                    >
-                      
-                        <img src="{{  service.icon | site.baseurl }}" alt=""   style="width:150px">
-                     
-                      <!--   <h1 class="title">{{  service.heading }}
-                               </h1>-->
-                        <div class="card-text">
-                          <b> 
-                           {{  service.description }}
-                   
-                          </b>
-                        
-                      </div>
-                    </div>
-                    {% endfor %}
-
-                  </div>
-                </div>
-             
-              
-         
-              <div class="info-box-ref">
-                <div class="info-box-price">Aceitamos todos os cartões</div>
-                <img
-                style="width:50px"
-                src="{{ site.baseurl }}/assets/icon/mastercard.svg"
-                alt="matercard"
-              />
-              <img
-              style="width:50px"
-              src="{{ site.baseurl }}/assets/icon/visa.svg"
-              alt="visa"
-            />
-            <img
-            style="width:50px"
-            src="{{ site.baseurl }}/assets/icon/elo.svg"
-            alt="elo"
-          />
+    <div class="pure-u-1 pure-u-md-1-2">
+      <ul>
+        <li>
+          Montagem de móveis de qualquer marca Seja IKEA, Argos ou qualquer
+          outro nome de revendedor que você possa imaginar, tenha certeza de que
+          as montadoras de móveis sabem como juntar esses produtos para que você
+          possa usá-los nos próximos anos
+        </li>
+        <li>
+          Também fazemos coleta e entrega Comprar móveis planos pode ser um
+          aborrecimento, sabemos. Sem mencionar se você não possui um veículo
+          adequado para levar para casa todas essas novas compras. Então, basta
+          nos fornecer os códigos de compras exclusivos dos itens que você
+          deseja para o seu lugar e nós os levaremos para você
+        </li>
+        <li>
+          Preços honestos - você paga pelo que recebe Nossas tarifas para a
+          junção de móveis são baseadas a cada hora. Você é cobrado apenas pelo
+          tempo que o seu trabalho leva. Não há taxas ocultas. O tempo mínimo de
+          reserva é de 1 hora, depois que você é cobrado por cada meia ou hora
+          completa.
+        </li>
+        <li> <div class="info-box-price">Aceitamos todos os cartões</div>
           <img
           style="width:50px"
-          src="{{ site.baseurl }}/assets/icon/amex.svg"
-          alt="amex"
+          src="{{ site.baseurl }}/assets/icon/mastercard.svg"
+          alt="matercard"
         />
-    
-           
-              </div>
-              
-          </div>
- 
-        </div>
-        
-        </div>
-        
-      </div>
-      
+        <img
+        style="width:50px"
+        src="{{ site.baseurl }}/assets/icon/visa.svg"
+        alt="visa"
+      />
+      <img
+      style="width:50px"
+      src="{{ site.baseurl }}/assets/icon/elo.svg"
+      alt="elo"
+    />
+    <img
+    style="width:50px"
+    src="{{ site.baseurl }}/assets/icon/amex.svg"
+    alt="amex"
+  />
+
+     
+        </div></li>
+      </ul>
     </div>
   </div>
 </section>
-
+{% endif %}

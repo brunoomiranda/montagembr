@@ -1,6 +1,8 @@
 ---
-title: Montagem de Móveis
+title: MontagemBR - Montagem e concerto de Móveis RJ
 layout: home
+banner_image: "/photos/banner.jpg"
+service_image: "/photos/services.png"
 services:
   - heading: PROFISSIONAL
     description: Com mais de 10 anos no mercado.

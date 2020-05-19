@@ -4,10 +4,22 @@
   {% include head.html %}
   <body>
       {% include header.html %}
-      <main>
-        
-    {{ content}}
-      </main>
+      {% include banner.html %}
+      {% include contacts.html %}
+      {% include services.html %}
+      {% include contact.html %}
+      {% include posts.html %}
+
+      <section class="container pure-g">
+       
+          <div class="pure-u-1">
+            <div class="content">
+              {{ content }}
+            </div>
+          </div>
+     
+      </section>
+   
       {% include footer.html %}
       {% include script.html %}
   </body>

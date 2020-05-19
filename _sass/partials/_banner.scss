@@ -1,0 +1,16 @@
+#banner ul li {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin: 0;
+}
