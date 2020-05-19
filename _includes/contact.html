@@ -13,55 +13,49 @@ site.data.information %}
   </div>
 
   <div class="pure-u-1 pure-u-md-1-2">
-    <form id="contact-form" name="contact" netlify>
-      <div id="nextcloud-notice" class="info-support-container hidden">
-        <div class="icon-container">
-          <i class="fa fa-info-circle"></i>
-        </div>
-      </div>
+    <form
+      class="pure-form pure-form-stacked"
+      id="contact-form"
+      name="contact"
+      netlify
+    >
+      <label class="float-left" for="input-prename">Nome</label>
+      <input
+        name="name"
+        type="text"
+        required="required"
+        class="form-control"
+        id="input-prename"
+        name="input-prename"
+        value=""
+      />
 
-      <div class="form-group">
-        <label class="float-left" for="input-prename">Nome</label>
-        <input
-          name="name"
-          type="text"
-          required="required"
-          class="form-control"
-          id="input-prename"
-          name="input-prename"
-          value=""
-        />
-      </div>
+      <label class="float-left" for="input-mail">Email</label>
+      <input
+        type="email"
+        required="required"
+        class="form-control"
+        id="input-mail"
+        name="input-mail"
+        value=""
+        name="email"
+      />
 
-      <div class="form-group">
-        <label class="float-left" for="input-mail">Email</label>
-        <input
-          type="email"
-          required="required"
-          class="form-control"
-          id="input-mail"
-          name="input-mail"
-          value=""
-          name="email"
-        />
-      </div>
-      <div class="form-group support-form-padding-top">
-        <label class="float-left" for="input-message">Mensagem</label>
-        <textarea
-          class="form-control support-message"
-          required="required"
-          rows="7"
-          name="message"
-          id="input-message"
-          name="input-message"
-        ></textarea>
-      </div>
+      <label class="float-left" for="input-message">Mensagem</label>
+      <textarea
+        class="form-control support-message"
+        required="required"
+        rows="7"
+        name="message"
+        id="input-message"
+        name="input-message"
+      ></textarea>
 
       <input
         type="submit"
         value="Enviar"
         id="btn-submit"
-        class="btn btn-yellow btn-md"
+        class="pure-button pure-button-primary"
       />
     </form>
   </div>

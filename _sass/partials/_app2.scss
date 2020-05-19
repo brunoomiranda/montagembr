@@ -320,7 +320,7 @@ p {
 .site-footer {
   padding-top: 70px;
   background-color: #2f2f2f;
-  margin-top: 60px;
+
   font-size: 13px;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.4);
@@ -1219,8 +1219,6 @@ nav ul {
 }
 
 .gab-heroConcessoes {
-  background: #bbb;
-
   margin-bottom: -100px;
   height: 600px;
 }
@@ -1237,4 +1235,15 @@ nav ul {
 
 .grey-card-no-padding {
   background: #f4f4f4;
+}
+
+.photo-box,
+.text-box {
+  position: relative;
+  width: 250px;
+}
+img {
+  width: inherit; /* This makes the next two lines work in IE8. */
+  max-width: 100%; /* Add !important if needed. */
+  height: auto; /* Add !important if needed. */
 }
