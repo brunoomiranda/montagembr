@@ -38,6 +38,10 @@
   />
 
   <link rel="stylesheet" href="/assets/css/main.css">
+   <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
@@ -60,81 +64,88 @@
 </head>
 
   <body>
-      <!-- start Mobile Nav section -->
-
-<!-- <div class="mobile-whiten">&nbsp;</div>
-<nav class="mobile-shift-menu" id="mobile-shift-menu">
-  <div class="closebtn">
-    <h4>Fechar <i class="fa fa-times"></i></h4>
-  </div>
-  <div style="width: auto;">
-    <div class="mobile-nav-section">
-      <a
-        href="/"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Inicio</h4>
-      </a>
-      <a
-        href="/posts"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Trabalhos</h4>
-      </a>
       
-      <a
-        href="/contact"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Contato</h4>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<!-- end of Mobile Nav section -->
 
 <!-- start Header section -->
 
 
 <header class="site-header"  style="background-color:#0046be;">
   <div class="container">
-    
+      <div
+      class="ui pointing menu stackable"
+      role="navigation"
+      aria-label="Main menu"
+    >
     <h1 class="logo">
         <a href="/">
          
         </a>
       </h1>
-      <nav class="main-nav">
-        <ul class="navigation">
+      
+      
+       <!--<nav class="main-nav right menu">
+        <!--<ul class="navigation">
        
           
 
 
   <li  
   >
-    <a   href="/" data-current="current page">Home</a>
+    <a  class="item"  href="/" data-current="current page">Home</a>
     
   </li>
 
   <li  
   >
-    <a   href="/contact">Contato</a>
+    <a  class="item"  href="/contact">Contato</a>
     
   </li>
 
   <li  
   >
-    <a   href="/posts">Trabalhos</a>
+    <a  class="item"  href="/posts">Trabalhos</a>
     
   </li>
 
 
  
 
-        </ul>
-      
-    </nav>
+        </ul>-->
+
+         <div class="right menu navigation">
+        
+
+
+  <li  
+  >
+    <a  class="item"  href="/" data-current="current page">Home</a>
+    
+  </li>
+
+  <li  
+  >
+    <a  class="item"  href="/contact">Contato</a>
+    
+  </li>
+
+  <li  
+  >
+    <a  class="item"  href="/posts">Trabalhos</a>
+    
+  </li>
+
+
+ 
+     
+      </div>
+      <div class="hamburger">
+        <span class="hamburger-bun"></span>
+        <span class="hamburger-patty"></span>
+        <span class="hamburger-bun"></span>
+      </div>
+
+     <!--</nav>-->
+  </div>
     </div>
 
   
@@ -155,7 +166,7 @@
 				
 				<li>Disponível 7 dias por semana, incluindo feriados</li>
 					
-				<li>Coleta e entrega mediante solicitação</li>
+			
 					<li>Todos os tipos de móveis para montagem em casa ou no escritório de marcas populares</li>
 				  <li>Trabalho garantido a preços camaradas</li>
 				</ul>
@@ -174,17 +185,19 @@
     <div class="pure-u-1 pure-u-md-1">
       <div class="gab-services">
         <a
-          href="https://www.grupoaguasdobrasil.com.br/agencia-virtual/login/?redirect_to=https%3A%2F%2Fwww.grupoaguasdobrasil.com.br%2Fagencia-virtual%2Fservicos%2Fquero-negociar/?"
+          href="https://api.whatsapp.com/send?phone=21988658826"
           class="gab-service"
         >
           <img
+          style="width: 50px;height: 50px"
             class="gab-service__icon"
-            src="/assets/icon/whatsapp.svg"
+            src="/assets/icon/WhatsApp.svg"
             alt=""
           />
           <img
+           style="width: 50px;height: 50px"
             class="gab-service__icon--hover"
-            src="https://www.grupoaguasdobrasil.com.br/paraty/wp-content/uploads/sites/39/2018/04/icon-quitacao-white.svg"
+            src="/assets/icon/WhatsApp.svg"
             alt=""
           />
           <div class="gab-service__title">
@@ -195,20 +208,22 @@
           </div>
         </a>
         <a
-          href="https://www.grupoaguasdobrasil.com.br/agencia-virtual/servicos/conta-digital/"
+          href="/contact"
           class="gab-service"
         >
           <img
+          style="width: 50px;height: 50px"
             class="gab-service__icon"
-            src="https://www.grupoaguasdobrasil.com.br/paraty/wp-content/uploads/sites/39/2019/04/iconecontadigital.png"
+            src="/assets/icon/email.svg"
             alt=""
           />
           <img
+          style="width: 50px;height: 50px"
             class="gab-service__icon--hover"
-            src="https://www.grupoaguasdobrasil.com.br/paraty/wp-content/uploads/sites/39/2019/04/iconecontadigitalhover.png"
+            src="/assets/icon/email.svg"
             alt=""
           />
-          <div class="gab-service__title">Conta <strong>digital</strong></div>
+          <div class="gab-service__title">Ou por<strong>email</strong></div>
           <div class="gab-service__description">
             bruno2014miranda21@gmail.com
           </div>
@@ -227,26 +242,17 @@
     <div class="pure-u-1 pure-u-md-1-2"><img src="/photos/services.png" /></div>
 
     <div class="pure-u-1 pure-u-md-1-2">
-      <ul>
+      <ul class="service-list">
         <li>
-          Montagem de móveis de qualquer marca Seja IKEA, Argos ou qualquer
-          outro nome de revendedor que você possa imaginar, tenha certeza de que
-          as montadoras de móveis sabem como juntar esses produtos para que você
-          possa usá-los nos próximos anos
+          Montagem de móveis de qualquer marca seja Tok&Stok, Viggore ou qualquer
+          outro nome de revendedor que você possa imaginar.
         </li>
         <li>
-          Também fazemos coleta e entrega Comprar móveis planos pode ser um
-          aborrecimento, sabemos. Sem mencionar se você não possui um veículo
-          adequado para levar para casa todas essas novas compras. Então, basta
-          nos fornecer os códigos de compras exclusivos dos itens que você
-          deseja para o seu lugar e nós os levaremos para você
+          Também fazemos reparos e consertos.
         </li>
         <li>
-          Preços honestos - você paga pelo que recebe Nossas tarifas para a
-          junção de móveis são baseadas a cada hora. Você é cobrado apenas pelo
-          tempo que o seu trabalho leva. Não há taxas ocultas. O tempo mínimo de
-          reserva é de 1 hora, depois que você é cobrado por cada meia ou hora
-          completa.
+          Preços camaradas - você paga pelo que recebe Você é cobrado apenas pelo
+          tempo que o seu trabalho leva. Não há taxas ocultas.
         </li>
         <li> <div class="info-box-price">Aceitamos todos os cartões</div>
           <img
@@ -278,7 +284,8 @@
 </section>
 
         
-<section class="container pure-g">
+<section class="container pure-g padding">
+ 
   <div class="pure-u-1 pure-u-md-1-2">
     <ul class="list-unstyled list-big-headlines ">
       <li><h2 class="margin-0">Dúvidas?</h2></li>
@@ -337,6 +344,7 @@
       />
     </form>
   </div>
+
 </section>
  
 
@@ -366,35 +374,26 @@
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/guarda-roupa-abril-1"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/guarda-roupa-abril-1&title=Guarda-roupa Abril 1"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -415,35 +414,26 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/guarda-roupa-abril-2"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/guarda-roupa-abril-2&title=Guarda-roupa Abril 2"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -464,35 +454,26 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/arm%C3%A1rio-de-cozinha-abril-1"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/arm%C3%A1rio-de-cozinha-abril-1&title=Armário de cozinha Abril 1"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -513,35 +494,26 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/rack"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/rack&title=Rack"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -562,35 +534,26 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/mesa-de-jantar-2"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/mesa-de-jantar-2&title=Mesa de jantar"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -611,35 +574,26 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/arm%C3%A1rio-de-cozinha"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/arm%C3%A1rio-de-cozinha&title=Armario de cozinha "
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
 
           <div class="thumbnail">
@@ -660,37 +614,28 @@ data-size="large"
 
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="http://localhost:4000//post/guarda-roupa"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u=http://localhost:4000//post/guarda-roupa&title=Guarda-roupa"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u=&title=" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text=http://localhost:4000/'
+  alt="(21) 98865-8826"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text=http://localhost:4000/'>  <img
-  class="location-icon fa fa-users "
-  src="/assets/icon/whatsapp.svg"
-  alt="(21) 98865-8826"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           
-          <hr />
+          
         </div>
       </div>
     </div>
@@ -712,15 +657,20 @@ data-size="large"
    
   <div class="container pure-g">
     <div class="footer-col pure-u-1 pure-u-md-1-4">
-      <i class="fa fa-phone"></i>
-      <a href="tel:(21) 98865-8826"> (21) 98865-8826</a>
+      <ul>
+        <li>     <i class="fa fa-phone"></i> <a href="tel:(21) 98865-8826"> (21) 98865-8826</a></li>
+ 
+  
 
-      <i class="fa fa-envelope"></i>
+      <li><i class="fa fa-envelope"></i>
       <a href="mailto:bruno2014miranda21@gmail.com.com">bruno2014miranda21@gmail.com</a>
+    </li>
 
-      <p class="text-center">
+      <li><p class="text-center">
         <small>© 2020. MontagemBR</small>
-      </p>
+      </p></li>
+          <li><a href="https://www.netjapa.com">NETJAPA</a></li>
+        </ul>
     </div>
 
     
@@ -732,9 +682,7 @@ data-size="large"
           <a href="https://www.facebook.com/montagembr" target="_blank">
             <i class="fa fa-facebook-square fa-2x fa-fh"></i>
           </a>
-          <a href="https://twitter.com/montagembr" target="_blank">
-            <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-          </a>
+         
           <a href="https://www.instagram.com/montagembr" target="_blank">
             <i class="fa fa-instagram fa-2x"></i>
           </a>
@@ -745,11 +693,22 @@ data-size="large"
       </ul>
       
     </div>
+     
   </div>
 </footer>
 <!-- end footer section -->
 
       <!-- Bootstrap core JavaScript -->
+
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+></script>
+
+<script src="/assets/js/apollo.js"></script>
+
+
+<script src="/assets/js/hamburger.js"></script>
 
 <div id="fb-root"></div>
 <script

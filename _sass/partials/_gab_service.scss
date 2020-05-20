@@ -44,7 +44,7 @@
   display: inline-block;
   margin-bottom: 30px;
   background-color: #fff;
-  padding: 30px;
+  padding: 25px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -54,6 +54,9 @@
   -o-transition: all 0.3s ease, top 0.3s 0.15s ease;
   transition: all 0.3s ease, top 0.3s ease 0.15s;
   top: 0;
+
+
+
 }
 
 .gab-service,
@@ -108,7 +111,7 @@
   margin-top: -200px;
   margin-bottom: 60px;
   background-color: #003764;
-  background-image: url(../images/water-bg-concept.jpg);
+
   background-position: bottom;
   background-size: cover;
 }
@@ -212,6 +215,7 @@
   line-height: 1.923076923076923;
   font-weight: bold;
   color: #003764;
+  flex-wrap: wrap;
 }
 
 .gab-service__more-link {
@@ -259,4 +263,16 @@
 
 .gab-service--2:hover .gab-service--2__icon--hover {
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+.gab-home-services--2, .gab-services, .gab-services--2, .gab-services--3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+   
+}
+
 }

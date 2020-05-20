@@ -2,15 +2,20 @@
   {% if site.data.information %} {% assign info = site.data.information %}
   <div class="container pure-g">
     <div class="footer-col pure-u-1 pure-u-md-1-4">
-      <i class="fa fa-phone"></i>
-      <a href="tel:(21) 98865-8826"> {{info.phone}}</a>
+      <ul>
+        <li>     <i class="fa fa-phone"></i> <a href="tel:(21) 98865-8826"> {{info.phone}}</a></li>
+ 
+  
 
-      <i class="fa fa-envelope"></i>
+      <li><i class="fa fa-envelope"></i>
       <a href="mailto:bruno2014miranda21@gmail.com.com">{{info.email}}</a>
+    </li>
 
-      <p class="text-center">
+      <li><p class="text-center">
         <small>© 2020. MontagemBR</small>
-      </p>
+      </p></li>
+          <li><a href="https://www.netjapa.com">NETJAPA</a></li>
+        </ul>
     </div>
 
     {% endif %}
@@ -22,9 +27,7 @@
           <a href="https://www.facebook.com/montagembr" target="_blank">
             <i class="fa fa-facebook-square fa-2x fa-fh"></i>
           </a>
-          <a href="https://twitter.com/montagembr" target="_blank">
-            <i class="fa fa-twitter-square fa-2x fa-fh twitter-icon"></i>
-          </a>
+         
           <a href="https://www.instagram.com/montagembr" target="_blank">
             <i class="fa fa-instagram fa-2x"></i>
           </a>
@@ -35,6 +38,7 @@
       </ul>
       {% endif %}
     </div>
+     
   </div>
 </footer>
 <!-- end footer section -->

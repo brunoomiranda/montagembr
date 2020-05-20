@@ -1,56 +1,41 @@
-<!-- start Mobile Nav section -->
 
-<!-- <div class="mobile-whiten">&nbsp;</div>
-<nav class="mobile-shift-menu" id="mobile-shift-menu">
-  <div class="closebtn">
-    <h4>Fechar <i class="fa fa-times"></i></h4>
-  </div>
-  <div style="width: auto;">
-    <div class="mobile-nav-section">
-      <a
-        href="{{ site.baseurl }}/"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Inicio</h4>
-      </a>
-      <a
-        href="{{ site.baseurl }}/posts"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Trabalhos</h4>
-      </a>
-      
-      <a
-        href="{{ site.baseurl }}/contact"
-        class="link-color-white nav-menu-item-wrapper"
-      >
-        <h4>Contato</h4>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<!-- end of Mobile Nav section -->
 
 <!-- start Header section -->
 
 
 <header class="site-header"  style="background-color:#0046be;">
   <div class="container">
-    
+      <div
+      class="ui pointing menu stackable"
+      role="navigation"
+      aria-label="Main menu"
+    >
     <h1 class="logo">
         <a href="{{ "/" | relative_url }}">
          
         </a>
       </h1>
-      <nav class="main-nav">
-        <ul class="navigation">
+      
+      
+       <!--<nav class="main-nav right menu">
+        <!--<ul class="navigation">
        
           {% include navigation.html navigation=site.data.navigation %} 
 
-        </ul>
-      
-    </nav>
+        </ul>-->
+
+         <div class="right menu navigation">
+        {% include navigation.html navigation=site.data.navigation %} 
+     
+      </div>
+      <div class="hamburger">
+        <span class="hamburger-bun"></span>
+        <span class="hamburger-patty"></span>
+        <span class="hamburger-bun"></span>
+      </div>
+
+     <!--</nav>-->
+  </div>
     </div>
 
   

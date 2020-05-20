@@ -23,37 +23,28 @@
               {% include data.html date=post.date %}
             </time>
         
+<div id="share">
 
-<div
-class="fb-share-button"
-data-href="{{ site.url }}/{{ post.url }}"
-data-layout="button"
-data-size="large"
->
-<a
-  target="_blank"
-  href="https://www.facebook.com/sharer.php?u={{ site.url }}/{{ post.url }}&title={{ post.title }}"
- 
-"
-  class="fb-xfbml-parse-ignore"
-  >Compartilhar</a
->
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'
+  alt="{{ info.phone }}"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
 </div>
 
-<div>
-<a class="botao-wpp" href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'>  <img
-  class="location-icon fa fa-users "
-  src="{{ site.baseurl }}/assets/icon/whatsapp.svg"
-  alt="{{ info.phone }}"
-/>Compartilhar</a>
 
-            </div>
           </div>
 
           <!-- pagination -->
-
+<hr />
           {% endfor %}
-          <hr />
+          
         </div>
       </div>
     </div>

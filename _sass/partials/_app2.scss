@@ -17,6 +17,8 @@
   }
 }
 
+
+
 /* Theme styles */
 /* Base colors*/
 /* $brand-80-color: rgba($color-brand, 0.8);*/
@@ -549,46 +551,13 @@ nav ul {
   }
 }
 
-.breadcrumbs {
-  border-top: 1px solid #eee;
-  overflow: auto;
-  background: #f8f8f8;
-  margin-bottom: 40px;
-
-  ul {
-    float: left;
-    margin-top: 0;
-
-    li {
-      line-height: 50px;
-      float: left;
-      margin-bottom: 0;
-      margin-right: 7px;
-      font-size: 14px;
-      font-weight: 300;
-
-      a {
-        color: #1e405d;
-      }
-
-      i {
-        margin-left: 5px;
-        color: #788c9e;
-        font-size: 7px;
-        margin-top: -4px;
-        top: -2px;
-        position: relative;
-      }
-    }
-  }
-}
 
 /* dropdown main nav from http://ermauliks.github.io/2014/04/21/multilevel-navigation-using-jekyll/*/
 
 .navigation {
   margin-bottom: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   list-style-type: none;
 
   li {
@@ -1222,10 +1191,7 @@ nav ul {
   margin-bottom: -100px;
   height: 600px;
 }
-.gab-services {
-  position: relative;
-  display: inline-flex;
-}
+
 
 .grey-card {
   background: #f4f4f4;
@@ -1247,3 +1213,5 @@ img {
   max-width: 100%; /* Add !important if needed. */
   height: auto; /* Add !important if needed. */
 }
+
+.padding {padding: 50px}

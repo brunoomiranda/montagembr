@@ -25,23 +25,25 @@ layout: default
           <ul>
             <li><h1>{{page.title}}</h1></li>
             <li><p>{{ page.body }}</p></li>
-            <li><span>{{ page.date | date: "%b %-d, %Y" }}</span></li>
+            <li> <time class="post-date" datetime="{{ date_to_xmlschema }}">
+      {% include data.html date=page.date %}
+    </time></li>
             <li>
-              <div
-                class="fb-share-button"
-                data-href="{{ site.url }}/{{ page.url }}"
-                data-layout="button"
-                data-size="large"
-              >
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/sharer.php?u={{ site.url }}/{{ page.url }}&title={{ page.title }}"
-                 
-                "
-                  class="fb-xfbml-parse-ignore"
-                  >Compartilhar</a
-                >
-              </div>
+             <div id="share">
+
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'
+  alt="{{ info.phone }}"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
+</div>
+
               </li>
           </ul>
         </div>
