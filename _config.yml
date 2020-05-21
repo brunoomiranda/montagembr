@@ -1,9 +1,10 @@
 # Basic settings
+
 url: "https://www.montagembr.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "MontagemBR - Montagem e conserto de Móveis Rio de Janeiro" # the name of your site, e.g. ACME Corp.
-description: "Serviço de montagem e conserto de móveis por peritos segurados e equipados 
-Monte ou conserte móveis no Rio de janeiro"
+description: "Serviço de montagem e conserto de móveis a preços acessíveis 
+no Rio de janeiro, Montagem de Móveis RJ, Montador de Móveis no Rio de Janeiro, Montagem de Móveis no Rio de Janeiro"
 
 lang: "pt-BR"
 # Build settings
@@ -21,7 +22,7 @@ plugins:
   - jekyll-menus
 #paginate: 3
 #paginate_path: service/page:num/
-paginate: 10
+paginate: 4
 paginate_path: posts/page:num/
 
 #Permalink
