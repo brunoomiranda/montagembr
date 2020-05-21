@@ -1203,11 +1203,40 @@ nav ul {
   background: #f4f4f4;
 }
 
-.photo-box,
-.text-box {
+.gallery
+ {
   position: relative;
   width: 250px;
+ 
+
+   margin-right: 20px;
+    margin-bottom: 20px;
+vertical-align: top;
+display: inline-block;
+    position: relative;
+  
 }
+
+.gallery-container {
+
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+
+}
+
+.gallery-caption {
+  
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+}
+
 img {
   width: inherit; /* This makes the next two lines work in IE8. */
   max-width: 100%; /* Add !important if needed. */

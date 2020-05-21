@@ -10,6 +10,21 @@ site.data.information %}
 
     <ul class="list-unstyled ">
       <li>{{ info.phone }}</li>
+      <li><div id="share">
+
+  <!-- facebook -->
+  <a class="facebook" href="https://www.facebook.com/share.php?u={{url}}&title={{title}}" target="blank"><i class="fa fa-facebook"></i></a>
+
+  <!-- twitter -->
+  <a class="whatsapp" 
+href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url | uri_escape}}'
+  alt="{{ info.phone }}"
+
+  ><i class="fa fa-whatsapp"></i></a>
+
+  
+</div>
+</li>
     </ul>
   </div>
 

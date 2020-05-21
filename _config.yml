@@ -22,7 +22,7 @@ plugins:
   - jekyll-menus
 #paginate: 3
 #paginate_path: service/page:num/
-paginate: 4
+paginate: 12
 paginate_path: posts/page:num/
 
 #Permalink
