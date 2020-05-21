@@ -6,8 +6,10 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: #000;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 25px;
+ text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
 }
 /*ul {
   display: block;
@@ -15,9 +17,20 @@
   margin: 0;
 }*/
 
-ul {list-style: none;}
+
 ul.service-list  li {margin-bottom:20px;list-style: disc;}
 .fa-check-square-o {
   color: #9c3;
 
+}
+
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ 
 }

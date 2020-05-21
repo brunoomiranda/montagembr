@@ -16,6 +16,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .gab-services--2 {
@@ -55,7 +56,7 @@
   transition: all 0.3s ease, top 0.3s ease 0.15s;
   top: 0;
 
-
+flex-wrap: nowrap;
 
 }
 
@@ -94,6 +95,7 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .gab-service--2.gab-service--2-home:hover,
@@ -211,11 +213,11 @@
 .gab-service--2__description,
 .gab-service__description {
   font-family: Merriweather, Georgia, Times, Times New Roman, serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.923076923076923;
   font-weight: bold;
   color: #003764;
-  flex-wrap: wrap;
+ flex-wrap: nowrap;
 }
 
 .gab-service__more-link {
@@ -272,7 +274,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-   
+   flex-wrap: nowrap;
 }
 
 }
