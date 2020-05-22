@@ -9,6 +9,8 @@ Montagem de Móveis no Rio de Janeiro, Reforma de Móveis, Conserto de Móveis,
 Móveis Planejados Rio de Janeiro"
 
 lang: "pt-BR"
+
+
 # Build settings
 markdown: kramdown
 
@@ -84,6 +86,21 @@ defaults:
 
 # Exclude from processing.
 # The following items will not be processed.
+
+
+
+
+
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: montagembr
+
+
+
+
+
+
 exclude:
   - README.md
   - LICENSE.txt

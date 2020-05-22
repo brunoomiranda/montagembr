@@ -50,6 +50,10 @@ href='https://api.whatsapp.com/send?text={{ page.url | replace:"index.html","" |
       </div>
     </div>
   </div>
+
+  {% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
 </section>
 <style>
   div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6 {
