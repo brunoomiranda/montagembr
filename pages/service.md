@@ -1,6 +1,6 @@
 ---
 layout: service
-title: The Blog
+title: Trabalhos
 permalink: /service
 section: service
 ---

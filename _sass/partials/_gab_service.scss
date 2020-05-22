@@ -213,7 +213,7 @@ flex-wrap: nowrap;
 .gab-service--2__description,
 .gab-service__description {
   font-family: Merriweather, Georgia, Times, Times New Roman, serif;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.923076923076923;
   font-weight: bold;
   color: #003764;
@@ -275,6 +275,19 @@ flex-wrap: nowrap;
     -ms-flex-direction: column;
     flex-direction: column;
    flex-wrap: nowrap;
+   
+}
+}
+@media only screen and (max-width: 767px) {
+.gab-service--2__description,
+.gab-service__description {
+  font-family: Merriweather, Georgia, Times, Times New Roman, serif;
+  font-size: 12px;
+  line-height: 1.923076923076923;
+  font-weight: bold;
+  color: #003764;
+ flex-wrap: nowrap;
+
 }
 
 }

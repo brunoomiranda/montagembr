@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Montagem Index
+title: MontagemBR
 permalink: /
 section: home
 ---
