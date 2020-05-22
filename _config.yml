@@ -2,9 +2,11 @@
 
 url: "https://www.montagembr.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "MontagemBR - Montagem e reforma de Móveis Rio de Janeiro" # the name of your site, e.g. ACME Corp.
-description: "Serviço de montagem e reforma de móveis a preços acessíveis 
-no Rio de janeiro, Montagem de Móveis RJ, Montador de Móveis no Rio de Janeiro, Montagem de Móveis no Rio de Janeiro, Reforma de Móveis de Madeira"
+title: "MontagemBR - Montagem, reforma e móveis planejados Rio de Janeiro" # the name of your site, e.g. ACME Corp.
+description: "Serviço de montagem, reforma e fabricação de móveis planejados a preços acessíveis 
+no Rio de janeiro, Montagem de Móveis RJ, Montador de Móveis no Rio de Janeiro, 
+Montagem de Móveis no Rio de Janeiro, Reforma de Móveis, Conserto de Móveis, 
+Móveis Planejados Rio de Janeiro"
 
 lang: "pt-BR"
 # Build settings
