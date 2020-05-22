@@ -104,9 +104,11 @@ section {
 a {
   color: #0046be;
   cursor: pointer;
+    text-decoration: none;
 }
+
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* border-box for purecss grid*/
@@ -1196,8 +1198,13 @@ nav ul {
 .grey-card {
   background: #f4f4f4;
   color: #1e405d;
-  padding: 50px 0;
+  padding: 40px 0;
 }
+.yellow-card {
+  background-color: #ffd400;
+    padding: 40px 0;
+}
+
 
 .grey-card-no-padding {
   background: #f4f4f4;
